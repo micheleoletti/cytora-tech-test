@@ -1,48 +1,48 @@
 export interface Film {
-  Peoples: string[] | People[];
+  Peoples: string[];
   created: Date;
   director: string;
   edited: Date;
   episode_id: string;
   opening_crawl: string;
-  planets: string[] | Planet[];
+  planets: string[];
   producer: string;
   release_date: Date;
-  species: string[] | Specie[];
-  starships: string[] | Starship[];
+  species: string[];
+  starships: string[];
   title: string;
   url: string;
-  vehicles: string[] | Vehicle[];
+  vehicles: string[];
 }
 export interface People {
   birth_year: string;
   eye_color: string;
-  films: string[] | Film[];
+  films: string[];
   gender: string;
   hair_color: string;
   height: string;
-  homeworld: string | Planet;
+  homeworld: string;
   mass: string;
   name: string;
   skin_color: string;
   created?: Date;
   edited?: Date;
-  species: string[] | Specie[];
-  starships: string[] | Starship[];
+  species: string[];
+  starships: string[];
   url: string;
-  vehicles: string[] | Vehicle[];
+  vehicles: string[];
 }
 export interface Planet {
   climate: string;
   created: Date;
   diameter: string;
   edited: Date;
-  films: string[] | Film[];
+  films: string[];
   gravity: string;
   name: string;
   orbital_period: string;
   population: string;
-  residents: string[] | People[];
+  residents: string[];
   rotation_period: string;
   surface_water: string;
   terrain: string;
@@ -57,11 +57,11 @@ export interface Specie {
   edited: Date;
   eye_colors: string;
   hair_colors: string;
-  homeworld: string | Planet;
+  homeworld: string;
   language: string;
   name: string;
-  people: string[] | People[];
-  films: string[] | Film[];
+  people: string[];
+  films: string[];
   skin_colors: string;
   url: string;
 }
@@ -80,8 +80,8 @@ export interface Starship {
   model: string;
   name: string;
   passengers: string;
-  films: string[] | Film[];
-  pilots: string[] | People[];
+  films: string[];
+  pilots: string[];
   starship_class: string;
   url: string;
 }
@@ -98,8 +98,8 @@ export interface Vehicle {
   model: string;
   name: string;
   passengers: string;
-  pilots: string[] | People[];
-  films: string[] | Film[];
+  pilots: string[];
+  films: string[];
   url: string;
   vehicle_class: string;
 }

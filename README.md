@@ -1,5 +1,8 @@
 # Cytora tech test
 
+App that displays Star Wars data.
+[Interactive demo](https://cytora-tech-test.vercel.app/)
+
 Tech stack:
 
 - React framework: **Next.js**

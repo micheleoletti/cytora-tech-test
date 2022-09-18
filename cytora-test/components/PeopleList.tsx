@@ -7,7 +7,7 @@ interface PeopleListProps {
 }
 export default function PeopleList({ peopleList }: PeopleListProps) {
   return (
-    <Grid templateColumns={"repeat(3, 1fr)"} w={"full"} gap={8}>
+    <Grid templateColumns={["1fr", "repeat(3, 1fr)"]} w={"full"} gap={8}>
       {peopleList.map((people) => {
         return (
           <GridItem key={people.url}>

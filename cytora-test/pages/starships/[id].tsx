@@ -47,10 +47,7 @@ export default function StarshipBio() {
               <Text fontWeight={"bold"}>Pilots: </Text>
               {starshipDetail?.pilots.map((people) => {
                 return (
-                  <PeopleLink
-                    key={people as string}
-                    peopleUrl={people as string}
-                  ></PeopleLink>
+                  <PeopleLink key={people} peopleUrl={people}></PeopleLink>
                 );
               })}
             </Stack>

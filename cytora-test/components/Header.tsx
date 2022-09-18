@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <Stack
-      direction={"row"}
+      direction={["column", "row"]}
       w={"full"}
       justifyContent={"space-between"}
       cursor={"pointer"}
@@ -30,7 +30,7 @@ export default function Header() {
         </Heading>
       </Stack>
 
-      <Stack direction={"row"}>
+      <Stack direction={["column", "row"]}>
         <Button
           colorScheme={"red"}
           variant={"ghost"}

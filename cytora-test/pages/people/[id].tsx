@@ -41,9 +41,7 @@ export default function CharacterBio() {
           <Divider></Divider>
           <Stack direction={"row"} fontSize={"xl"}>
             <Text fontWeight={"bold"}>Homeworld: </Text>
-            <PlanetLink
-              planetUrl={peopleDetail?.homeworld as string}
-            ></PlanetLink>
+            <PlanetLink planetUrl={peopleDetail?.homeworld}></PlanetLink>
           </Stack>
 
           {peopleDetail && peopleDetail?.starships.length > 0 && (
@@ -52,8 +50,8 @@ export default function CharacterBio() {
               {peopleDetail?.starships.map((starship) => {
                 return (
                   <StarshipLink
-                    key={starship as string}
-                    starshipUrl={starship as string}
+                    key={starship}
+                    starshipUrl={starship}
                   ></StarshipLink>
                 );
               })}
