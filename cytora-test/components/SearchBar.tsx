@@ -42,7 +42,12 @@ export default function SearchBar() {
   }
 
   return (
-    <Stack pos={"relative"} direction={"column"} spacing={0} minW={"400px"}>
+    <Stack
+      pos={"relative"}
+      direction={"column"}
+      spacing={0}
+      minW={["full", "400px"]}
+    >
       <InputGroup justifyContent={"center"} position={"relative"}>
         <InputLeftElement pointerEvents="none" color={"gray.300"}>
           <FaSearch></FaSearch>
