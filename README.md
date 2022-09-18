@@ -1,19 +1,37 @@
 # Cytora tech test
 
-## How to build the project
+Tech stack:
 
-The project was built inside a Node dev container, so it's very easy to get started.
+- React framework: **Next.js**
+- UI library: **ChakraUI**
+- caching layer for the API requests: **SWR**
+- network requests: **Axios**
+
+## How to build it
+
+### Local
+
+If you do already have `npm` locally, then you can just:
+
+- `cd cytora-test`
+- `npm i`
+
+### Dev container
+
+If you do not have `npm` locally but you do have Docker, you can leverage the dev container the project is built into.
 
 - In VS Code, download the Remote - Containers extension [(https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)]()
 - Open Command Palette and run `Rebuild and Reopen in Container`
 - `cd cytora-test`
 - `npm i`
 
-Now you can either:
+## How to run it
 
-- launch the project in debug with the predefined vscode launch settings
-- `npm run dev`
-- `npm run build` and then `npm start`
+You can either:
+
+- launch the project in debug with the predefined vscode launch settings (debug + hot-reload)
+- `npm run dev` (hot-reload only)
+- `npm run build` and then `npm start`(optimized, no compiling at runtime)
 
 ## What would I have done with more time
 
